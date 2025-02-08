@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>El pony pisador</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="media/logo.jpeg" type="image/x-icon">
+</head>
+<body class="container">
+<header>
+    <h1>El pony Pisador</h1>
+</header>
+<main>
+        <video width="500" height="375" controls poster="media/logo.jpeg">
+            <source src="media/pony_pisador_short.mp4" type="video/mp4">
+            <source src="media/pony_pisador_short.ogg" type="video/ogg">
+            <track src="subtitles/subtitles.vtt" kind="subtitles" srclang="ca" label="Català">
+            El teu navegador no suporta el tag d'aquest video
+        </video>
+
+        <audio controls class="mt-5">
+            <source src="media/fulll_audio.ogg" type="audio/ogg">
+            <source src="media/fulll_audio.mp3" type="audio/mpeg">
+            El teu navegador no suporta aquest audio
+        </audio>
+
+        <h2 class="titol-galeria">Galeria d'Imatges</h2>
+        <div id="gallery-section" class="galeria">
+            <img src="media/imatge1.jpg" alt="Imatge del grup" class="image" />
+            <img src="media/imatge2.jpg" alt="Imatge 2" class="image" />
+            <img src="media/imatge3.jpg" alt="Imatge 3" class="image" />
+        </div>
+        <div class="titol-galeria zoom-controls">
+            <button id="zoom-in">Augmentar</button>
+            <button id="zoom-out">Disminuir</button>
+        </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
